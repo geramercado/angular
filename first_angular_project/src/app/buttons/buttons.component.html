@@ -1,0 +1,26 @@
+<div>
+
+    <button i18n [ngClass]="{
+        'red-button': true,
+        'state-disabled': enable
+        }" 
+        (click)="text_color='red-text'" mat-flat-button>Red color</button>
+    
+    <button i18n  [ngClass]="{'state-disabled': enable}" mat-flat-button class="green-button" (click)=" text_color = 'green-text' ">Green color</button>
+    <button i18n  [ngClass]="{'state-disabled': enable}" mat-flat-button (click)=" text_color = 'blue-text' ">Blue color</button>
+    
+        <p i18n [class]='text_color'>Typography is a way of arranging type to make text legible, readable, and appealing when displayed. Angular 
+            Material's theming system supports customizing the typography settings for the library's components. Additionally, Angular Material 
+            provides APIs for applying typography styles to elements in your own application.</p>
+    
+    
+    <button i18n mat-flat-button (click)=" text_color = 'black-text'" [ngClass]="{'state-disabled': enable}">Basic</button>
+    <button i18n mat-flat-button [ngClass]="{'state-disabled': enable}" >Disabled</button>
+        <a i18n mat-raised-button [ngClass]="{'state-disabled': enable}" target="_blank">Link</a>
+    
+    
+    <button i18n (click)="enable=!enable" mat-flat-button >Enable/Disabled</button>
+        <p>{{enable}}</p>
+        <p>{{msg}}</p>
+
+</div>

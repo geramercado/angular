@@ -1,0 +1,46 @@
+div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Ajusta según tus necesidades */
+  }  
+
+.red-button {
+    background-color: #ff4081 !important;
+    color: #ffffff !important;
+  }
+
+.green-button {
+    background-color: #20ce37 !important;
+    color: #ffffff !important;
+  }
+
+.green-text {
+    color: green;
+}
+
+.red-text {
+    color: red;
+}
+
+.blue-text {
+    color: blue;
+}
+
+.black-text {
+    color: black;
+}
+
+.state-disabled {
+    background-color: gray !important;
+    color: white !important;
+    pointer-events: none !important; /* Deshabilitar eventos de clic */
+  }
+  
+
+
+  
+  
+  
+  
